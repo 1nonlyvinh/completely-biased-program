@@ -3,13 +3,13 @@ import pdfminer
 print(pdfminer.__version__)  
 points = 0
 import re
-from datetime import datetime
+years = re.findall(r'\d+', text)
 
 #opens & reads fake-resume.pdf
 from io import StringIO
 from pdfminer.high_level import extract_text_to_fp
 output_string = StringIO()
-with open('fakeresume.pdf', 'rb') as fin:
+with open('resume1.pdf', 'rb') as fin:
     extract_text_to_fp(fin, output_string)
 print(output_string.getvalue().strip())
 
@@ -18,7 +18,7 @@ from pdfminer.high_level import extract_text
 def extract_text_from_pdf(pdf_path):
     return extract_text(pdf_path)
 
-pdf_text = extract_text_from_pdf('fakeresume.pdf')
+pdf_text = extract_text_from_pdf('resume1.pdf')
 
 # finds keywords
 def find_ed_keywords(text, keywords):
@@ -64,15 +64,19 @@ def find_experience_keywords(text, keywords):
             found_exp_keywords.append(keyword)
     return found_exp_keywords
 
-# keywords to find
-exp_keywords_to_search = ['']
+# keywords to find for experience
+exp_keywords_to_search = ['assisted', 'coordinated', 'intern', 'tutor']
 exp_found_keywords = find_experience_keywords(pdf_text, exp_keywords_to_search)
 
 def rank_exp(): 
-    if 'assisted' in exp_found_keywords:
+    if 'intern' in exp_found_keywords:
         global points
-        points += 0
-    if 'Coordinated' in exp_found_keywords:
+        points += 3
+    if 'coordinated' in exp_found_keywords:
+        points += 2
+    if 'assisted' in exp_found_keywords:
+        points += 1
+    if 'tutor' in exp_found_keywords:
         points += 2
 rank_exp()
 
@@ -81,32 +85,21 @@ if exp_found_keywords:
 else:
     print("No keywords found.")
 
-def extract_dates(pdf_path):
-    # Regular expression to find date patterns (e.g., Jan 2010 - Dec 2015)
-    date_pattern = r'(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b \d{4})'
-    dates = re.findall(date_pattern, pdf_path)
-    return dates
 
-def calculate_experience(dates):
-    # Convert date strings to datetime objects
-    date_objects = [datetime.strptime(date, '%b %Y') for date in dates]
-    
-    # Calculate the total experience in years
-    total_experience = 0
-    for i in range(0, len(date_objects), 2):
-        start_date = date_objects[i]
-        end_date = date_objects[i + 1] if i + 1 < len(date_objects) else datetime.now()
-        total_experience += (end_date - start_date).days / 365.25
-    
-    return total_experience
+def find_years_keywords(text, keywords):
+    found_yrs_keywords = []
+    for keyword in keywords:
+        if keyword.lower() in text.lower():
+            found_yrs_keywords.append(keyword)
+    return found_yrs_keywords
 
-# Example resume text
-pdf_path = extract_text_from_pdf('fakeresume.pdf')
+yrs_keywords_to_search = ['worked for', 'years of experience', 'over', 'more than']
+yrs_found_keywords = find_years_keywords(pdf_text, yrs_keywords_to_search)
 
-# Extract dates and calculate experience
-dates = extract_dates(pdf_path)
-experience_years = calculate_experience(dates)
-
-print(f"Total years of experience: {experience_years:.2f} years")
+if yrs_found_keywords:
+    print("Years keywords found:", yrs_found_keywords)
+else:
+    print("No keywords found.")
 # prints points Fuck you vincentFuck you vincentFuck you vincentFuck you vincent
 print(f'Points: {points}')
+
