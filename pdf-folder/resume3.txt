@@ -1,0 +1,112 @@
+ mail@firstlast.co.nz  +  64-1234-5678 
+
+ Education 
+ First Last 
+
+ firstlast.co.nz 
+ GitHub  :  firstlast  LinkedIn  :  firstlast 
+
+ City  ,  New  Zealand 
+ University  of  X 
+
+ — 
+
+ Jan  2016  (  Dec 2019  ) 
+
+ • 
+
+ BE  (  Hons  )  in  Software  Engineering  . 
+ GPA  :  7.67  (  Present  year  )  ,  5.33  (  Total  ) 
+
+ Employment 
+
+ Software  Engineering  Tutor 
+
+ • 
+
+ University  of  X 
+ Jan  2019  -  Present 
+
+ Teaching  students  on  software  engineering  practices  and  the  fundamentals  of 
+ Java  and  OO  design  . 
+
+ Software  Engineering  Intern 
+
+ • 
+
+ Atlassian  -  Sydney  ,  AUS 
+ Nov  2018  -  Feb  2019 
+
+ Implemented  priority  action  to  allow  rotation  of  sensitive  database  credentials 
+ during  incidents  . 
+
+ •  Created  Kotlin  microservice  allowing  eventually  consistent 
+ information  to  be  re  -  synced  in  response  to  delays  ,  reducing  overall 
+ time  to  execute  by  25  %  and  eliminating  frequent  alerts  and  pages  . 
+ Addressed regular  production  bugs  and  improvements  in  existing  Java 
+ services  using  Kanban  to  prioritize  requirements  ,  and  utilizing  CI  /  CD 
+ pipelines  to  rapidly  iterate  . 
+
+ •  Used  Splunk  and  Datadog  to  monitor  and  debug  production  systems 
+ using  queries  and  dashboards  . 
+
+ Alarm  Monitoring  Operator 
+ Alarm  company 
+
+ • 
+
+ June  2017  -  Nov  2018 
+
+ Clearly  and  concisely  communicated  with  many  different  people  , 
+ including  elderly  persons  who  had  activated  their  medical  alarm  ,  guard 
+ companies  ,  and  all  branches  of  the  emergency  services  . 
+
+ Duty  Manager 
+ Pizza  chain 
+ Jan  2016  -  June  2017 
+
+ Managed  up  to  15  employees  during  a  shift  ,  including  both  in  store  and 
+ delivery  drivers  .  Directly  responsible  for  dealing  with  customer 
+ concerns  and  complaints  targeting  customer  retention  . 
+
+ Projects 
+
+ Organ Donation  Management  System 
+
+ https://github.com/fake 
+ •  Worked  within  a  scrum  team  to  develop  solutions  to  improve  organ 
+ matching  processes  .  Developed  extensive  REST  API  using  Java  Spring 
+ and  Hibernate  ORM  . 
+
+ Created  a  novel  multi  -  user  touch  screen  interface  developed for 
+ collaborative  tabletop  screens  .  Extensive  focus  on  regression  testing using 
+ JUnit  and  Cucumber  . 
+
+ Used  story  point  estimation  using  the  Fibonacci  and  scrum  poker  method  . 
+
+ Regular  standups  ,  sprints  ,  retrospectives  ,  and  task  estimation  . 
+
+ Full  Stack  Auction  Site 
+
+ https://github.com/fake 
+
+ •  Created  fully  specified  REST  backend  built  with  Node.js  ,  Express.js 
+ and  MySQL  .  Developed  an  automated  test  suite  using  Javascript  with 
+ Mocha  and  Chai  . 
+
+ •  Created  a  Single  Page  Application  frontend  using  Vue.js  and  an 
+ MVVM  architecture  .  Implemented  user  stories  are defined  by  a  product 
+ owner  to  fulfill  acceptance  criteria  . 
+
+ Technical  Skills 
+
+ •  Languages  :  Java  ,  Kotlin  ,  Python  ,  Javascript  /  HTML  /  CSS  ,  C  ++  , 
+ SQL  ,  Bash 
+
+ •  Frameworks  and  Libraries  :  Spring  ,  Hibernate  ,  Node.js  ,  Vue.js  , 
+ Express.js  , 
+
+ •  Tools  :  Git  ,  Linux  ,  Docker  ,  AWS  (  DynamoDB  ,  Kinesis  ,  S3  ,  EC2  )  , 
+ Gradle  ,  Maven  ,  Jira  ,  JWT  ,  CI  /  CD 
+
+

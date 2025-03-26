@@ -1,0 +1,136 @@
+ FIRST  LAST 
+
+ City  ,  ST⚫  someperson@gmail.com  •  XXX  -  XXX  -  XXXX 
+
+ EDUCATION 
+ LinkedIn  :  linkedin.com/in/name  GitHub  :  github.com/username 
+
+ Top  10  CS College  Technology  |  City  ,  ST 
+
+ Master  of Science  ,  Computer  Science  |  GPA  :  3.85 
+ January  2018  -  December  2019 
+
+ Relevant  Coursework  :  Graduate  Algorithms  ,  Software  Development 
+ Process  ,  Software  Architecture  &  Design  ,  Operating  Systems  ,  Database 
+ Systems  ,  Information  Security  ,  Computer  Networks  ,  Machine  Learning  ,  Health 
+ Informatics 
+
+ PROFESSIONAL  EXPERIENCE 
+
+ Software Engineering  Intern  |  SOME  COMPANY  |  City  ,  ST 
+ June  -  August  2019 
+
+ Developed  server  -  side  web  services  in  Java  using  Spring  Boot  ; 
+ Implemented  a  feature  to  facilitate  concurrent  database  updates  in  SQL 
+ Server  to  improve  application  performance  by  40  %  . 
+
+ Developed  distributed  caching  solution  using  Hazelcast  to  significantly 
+ improve  user experience  by reducing  average  response  time  . 
+
+ •  Dockerized  micro  -  services  and  set  -  up  Jenkins  pipelines  to  automate 
+ Gradle  build  and  AWS  deployment  process  for  multiple  projects  . 
+
+ •  Devised  and  implemented  complex  and  fail  -  proof  database  updates  to 
+
+ avoid data  corruption  ;  Identified  critical  external  bugs  in  external  web- 
+ services  and collaborated  for  the  fixes  . 
+
+ Software Engineering  Intern  |  COMPANY  |  City  ,  ST 
+ January  -  May  2019 
+
+ As  a  member  of  Agile  scrum  team  ,  designed  and  developed  RESTful 
+ Micro  -  services  with  Spring  MVC  (  Java  )  ;  Implemented  Unit  and  Integration 
+ tests  with  JUnit5  ,  Mockito  and  Wiremock  to  achieve  80  %  automation  test 
+ coverage  . 
+
+ •  Developed  web  front  -  end  using  Angular.js  to  facilitate  user registration  for  a 
+ new  launched  product  .  Security  audit  and  threat  resolution  for  a 
+ micro  -  service  in under  7  days  for  the production  readiness  . 
+
+ •  Identified  and  addressed  100+  security  vulnerabilities  to  improve 
+ reliability  ,  security  ,  and  maintainability  of  the  system  ;  Documented  the 
+ process  for  future  use  across  the  organization  . 
+
+ Software  Test  Engineer  |  Company  |  City  ,  ST 
+
+ Responsible  for  driving  the  QA  process  for  financial  services  applications  , 
+ built  on  Service  -  Oriented  Architecture  . 
+ July  2015  -  June  2018 
+
+ •  Developed  100+  automated  test  scripts  to  test  application  front  -  end  using 
+ Selenium  framework  to  comply  with  federal  guidelines  . 
+
+ •  End  to  end  verification  of  financial  transactions  across  multiple  applications  to 
+ identify system  dependency  and  ensure  information  reliability  . 
+
+ •  Implemented  a  business  process  to  centralize  task  -  tracking  in the 
+ 50  -  member  department  and  reduced  effort  duplication  by  20  %  . 
+
+ •  Collaborated  with  stakeholders  to  formulate  requirements  and  user 
+ stories  ;  worked  with  development  team  to  identify  and  address  production 
+ defects  . 
+
+ PROJECTS 
+
+ FullStack  project  (  JavaScript  ,  Node.js  ,  MongoDB  ,  Express.js  ,  REST  , 
+ Heroku  )  Source  code  :  github.com/url 
+ September  2018 
+
+ A  full  -  stack  web  application  for  the  blog  about  campsites  developed 
+ with  MEAN  stack  where  registered  user  can  share  their  experiences 
+ with  the  user  community  . 
+
+ •  Designed  and  implemented  Yelp  Camp  (  a  Yelp  style  website  for 
+ campsites  )  that  supports  user  log  in  ,  posting  review  and  comments  ,  and 
+ editing  previous  submissions  . 
+
+ •  Implemented  MongoDB  infrastructure  to  store reviews  /  comments  data 
+ and  relevant  information  associated  with  users  and  campsites  . 
+
+ Name  Android  App  (  Android  ,  Java  ,  Android  Studio  ,  Espresso  ,  JUnit  , 
+ SQLite  ) 
+
+ Source  code  :  github.com/url 
+
+ An  Android  App  ,  where  the  user  can  practice  solving  Cryptogram  puzzles 
+ and  compare  their  progress  . 
+ June  2018 
+
+ Emphasized  on  User  experience  by  carefully  designing  user  -  friendly 
+ layouts  and  screen  transitions  ;  Automated  functional  and  Unit  testing  of  the 
+ app  using  Espresso  and  JUnit  . 
+
+ Full  Stack  Project  (  Java  ,  SWING  ,  UML  Diagrams  ,  PostgreSQL  ) 
+
+ Source  code  :  github.com/url 
+ April  2018 
+
+ Designed  and  programmed  a  scalable  and  reliable  Full  Stack  Java 
+
+ Application  to  simulate  Mass  Transit  System  .  The  application  model  is 
+ based  on Metro Atlanta  Rapid  Transit  Authority  (  MARTA  )  and  designed  to 
+ scale  for  up  to  1000+  vehicles  and  100,000+  riders  . 
+
+ •  Built  intuitive  GUI  using  SWING  to  facilitate  customization  of  simulation  data 
+ and  visualize  simulation  results  . 
+
+ •  Integrated  the  application  with  a  PostgreSQL database  system  to  analyze 
+ a  large  amount  of  real  -  time  data  and  generate  accurate  prediction  through 
+ the  simulation  system  . 
+
+ SKILLS 
+
+ Programming  :  Java  ,  Python  ,  JavaScript  ,  C  ,  C  #  ,  HTML  \  CSS  ,  SQL  ,  Groovy 
+
+ Technologies  :  SpringBoot  ,  J2EE  ,  JUnit  ,  Mockito  ,  Android  ,  Angular.js  , 
+ Node.js  ,  Oracle  DB  ,  SQL  Server 
+
+ DevOps  &  Cloud  : 
+
+ Tools  : 
+ CI  /  CD  ,  Jenkins  ,  Maven  ,  Gradle  ,  AWS  ,  Kubernetes  ,  Docker 
+
+ IntelliJ  IDEA  ,  Git  /  GitHub  ,  BitBucket  ,  JIRA  ,  Postman  ,  Kibana  ,  New  Relic  , 
+ Fortify 
+
+
