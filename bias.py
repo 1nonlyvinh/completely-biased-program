@@ -2,7 +2,7 @@
 import pdfminer
 print(pdfminer.__version__)  
 points = [0, 0, 0, 0, 0, 0]
-index = 1
+index = 0
 keywords = []
 import re
 import os
@@ -36,15 +36,15 @@ for pdf_file in pdf_files:
         print(f"An error occurred while processing {pdf_file}: {e}")
 print("Processing complete.")
 
-
 # finds keywords
-def find_ed_keywords(text, keywords):
+def find_ed_keywords(pdf_file, keywords):
     found_ed_keywords = []
     for keyword in keywords:
         if keyword.lower() in text.lower():
             found_ed_keywords.append(keyword)
     return found_ed_keywords
-find_ed_keywords(text, keywords)
+
+find_ed_keywords(pdf_file, keywords)
 
 
 # keywords to find
@@ -58,7 +58,7 @@ else:
     print("No keywords found.")
 
 # rank keywords related to education
-def rank_ed(): 
+def rank_ed(ed_found_keywords): 
     if 'university' in ed_found_keywords:
         global points
         points[index] += 2
@@ -74,7 +74,7 @@ def rank_ed():
         points[index] += 0.5
     if 'major' in ed_found_keywords:
         points[index] += 0.25
-rank_ed()
+rank_ed(ed_found_keywords)
 
 def find_experience_keywords(text, keywords):
     found_exp_keywords = []
@@ -91,15 +91,15 @@ exp_found_keywords = find_experience_keywords(pdf_file, exp_keywords_to_search)
 def rank_exp(): 
     if 'intern' in exp_found_keywords:
         global points
-        points += 3
+        points[index] += 3
     if 'coordinated' in exp_found_keywords:
-        points += 2
+        points[index] += 2
     if 'assisted' in exp_found_keywords:
-        points += 1
+        points[index] += 1
     if 'tutor' in exp_found_keywords:
-        points += 2
+        points[index] += 2
     if 'leadership' in exp_found_keywords:
-        points += 1
+        points[index] += 1
 rank_exp()
 
 if exp_found_keywords:
@@ -121,35 +121,35 @@ skills_found_keywords = find_skills_keywords(pdf_file, skills_keywords_to_search
 def find_skills(): 
     if 'pyhton' in skills_found_keywords:
         global points
-        points += 1
+        points[index] += 1
     if 'java' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'c++' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'javascript' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'html' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'css' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'SQL' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'Scrum' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'KanBan' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'AWS' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'Azure' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'iOS' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'Android' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'Linux' in skills_found_keywords:
-        points += 1
+        points[index] += 1
     if 'Win' in skills_found_keywords:
-        points += 1
+        points[index] += 1
 find_skills()
 
 if skills_found_keywords:
@@ -158,16 +158,15 @@ else:
     print("No keywords found.")
 
 for pdf_file in pdf_files: 
-    index += 1 
-    find_ed_keywords(text, keywords)
-    rank_ed()
+    index = 0
+    find_ed_keywords(pdf_file, keywords)
+    rank_ed(ed_found_keywords)
     find_experience_keywords(text, keywords)
     rank_exp()
     find_skills_keywords(text, keywords)
     find_skills()
 
-
-
 # prints points Fuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincentFuck you vincent
 print(f'Points: {points}')
 
+print(pdf_files)
