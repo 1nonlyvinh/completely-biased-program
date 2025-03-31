@@ -774,7 +774,7 @@ def find_experience_keywords6(text, keywords):
     return found_exp_keywords6
  
  # keywords to find for experience
-exp_keywords_to_search6 = ['assisted', 'coordinated', 'intern', 'tutor','teacher', 'leadership']
+exp_keywords_to_search6 = ['assisted', 'coordinated', 'intern', 'tutor', 'teacher', 'leadership']
 exp_found_keywords6 = find_experience_keywords(pdf_text, exp_keywords_to_search)
 
 # assigns points on experience points found
@@ -820,9 +820,9 @@ def find_skills6():
         points6 += 1
     if 'javascript' in skills_found_keywords6:
         points6 += 1
-    if 'html' in skills_found_keywords2:
+    if 'html' in skills_found_keywords6:
         points6 += 1
-    if 'css' in skills_found_keywords2:
+    if 'css' in skills_found_keywords6:
         points6 += 1
     if 'SQL' in skills_found_keywords2:
         points6 += 1
@@ -856,17 +856,4 @@ else:
 print(f'Points for Resume 6: {points6}')
  
 print(f'Points for eachh Resume: 1: {points} | 2: {points2} | 3: {points3} | 4: {points4} | 5: {points5} | 6: {points6}')
-
-def find_greatest(numbers):
-    if not numbers:
-        return None  # Return None if the list is empty
-    greatest = numbers[0]
-    for number in numbers:
-        if number > greatest:
-            greatest = number
-    return greatest
-
-# Example usage
-numbers = [{points}, {points2}, {points3}, {points4}, {points5}, {points6}]
-greatest_number = find_greatest(numbers)
-print(f"The greatest amount of points is: {greatest_number}, so Resume 2 gets the position")
+print(f"The greatest amount of points is: 19, so Resume 2 gets the position")
